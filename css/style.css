@@ -84,6 +84,14 @@
     background-image: url(../img/title_images/blackhole.jpg);
 }
 
+.parallax.nebula{
+    background-image: url(../img/title_images/nebula.jpg);
+}
+
+.parallax.neutron{
+    background-image: url(../img/title_images/pulsar.jpg);
+}
+
 /****************************************** CONTAINERS *********************************************/
 
 .head_logo{
@@ -194,6 +202,7 @@
   font-size: clamp(0.8rem, 1.5vw, 2rem);
   flex-direction: column;
   text-align: left;
+  white-space: nowrap;
 }
 
 .dropdown:hover .dropdown-content {
