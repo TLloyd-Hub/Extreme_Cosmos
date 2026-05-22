@@ -246,10 +246,11 @@
 /****************************************** OTHER *********************************************/
 
 .page_title{
-    display: inline-block;
-    justify-content: right;
-    justify-self: right;
-    font-size: clamp(0.8rem, 2vw, 3rem);
+    display: flex;
+    justify-content: left;
+    justify-self: left;
+    /*font-size: clamp(0.8rem, 2vw, 3rem);*/
+    font-size: 2vw;
     width: fit-content;
     margin-left: 2em;
     margin-bottom: 15%;
@@ -348,8 +349,20 @@
     .information_block img{
     width: 60%;
 }
-.definition{
+    .definition{
     width: 50%;
+    justify-self: center;
+    margin-top: 60%;
+}
+    .page_title{
+    font-size: 4vw;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+}
+.page_grid{
+    width: 60%;
+    margin-top: 60%;
 }
 }
 
