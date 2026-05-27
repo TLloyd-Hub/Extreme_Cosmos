@@ -4,32 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quasars</title>
-    <link rel="icon" type="image/x-icon" href="../img/icon/logo.ico">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/icon/logo.ico">
+    <title>About Me</title>
 </head>
 
 <body class="no_margin">
-
     <div class="parallax quasar">
-        <nav class="primary_nav">
-            <div class="nav_wrapper">
+        <nav class="navbar">
+            <div class="home_logo">
                 <a href="../index.html"><img src="../img/mini_logo.png" alt="A picture of the website logo."></a>
-                <ul class="nav_list">
-                    <li>About Me</li>
-                    <li class="dropdown">Space Objects
-                        <div class="dropdown-content">
-                            <a href="supernova.html">Supernova</a>
-                            <a href="quasar.html">Quasar</a>
-                            <a href="black_hole.html">Black Hole</a>
-                            <a href="nebula.html">Nebula</a>
-                            <a href="neutron.html">Neutron Star</a>
-                        </div>
-                    </li>
-                </ul>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+
+            <div class="nav_menu">
+                <ul class="menu-items">
+                    <li><a href="supernova.html">Supernova</a></li>
+                    <li><a href="quasar.html">Quasar</a></li>
+                    <li><a href="black_hole.html">Black Hole</a></li>
+                    <li><a href="nebula.html">Nebula</a></li>
+                    <li><a href="neutron.html">Neutron Star</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
             </div>
         </nav>
+
         <div class="page_title">
             <h1 class="blue_text font_exo shadow_text">Quasar</h1>
         </div>
@@ -123,10 +129,6 @@
             </div>
         </footer>
     </div>
-
-
-
-
 </body>
 
 </html>
