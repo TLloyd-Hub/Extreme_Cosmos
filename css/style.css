@@ -261,6 +261,7 @@ a:active {
     padding-bottom: 5%;
 }
 
+/********************************************* NAVIGATION GRID **************************************/
 .page_grid{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -276,6 +277,7 @@ a:active {
     text-align: center;
     border: 1px solid rgba(228, 211, 41, 0.5);
 }
+
 .grid_item img{
     background-color: rgba(13, 11, 97, 0.5);
     width: 100%;
@@ -291,11 +293,12 @@ a:active {
     border: 1px solid rgba(13, 11, 97, 0.5);
 }
 
+/********************************** DEFINITION AREA *********************************/
 .definition{
     font-family: exo;
     color: white;
     width: 95%;
-    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
+    font-size: clamp(1.2rem, 1.2vw, 1.2rem);
     justify-self: center;
 }
 
@@ -313,6 +316,8 @@ a:active {
     float: right;
 }
 
+/*********************************** INFORMATION AREA *******************************/
+
 .information_block{
     display: grid;
     grid-template-areas: 50% 50%;
@@ -321,22 +326,7 @@ a:active {
     font-family: exo;
     width: 90%;
     justify-self: center;
-    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
-}
-
-.top_image, .bottom_image{
-    grid-column: 1;
-    grid-row: 1;
-    display: block;
-    width: 90%;
-}
-
-.top_image{
-    align-self: top; 
-}
-
-.bottom_image, .bottom_image{
-    align-self: last baseline;
+    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
 }
 
 .upper_image{
@@ -346,7 +336,7 @@ a:active {
 
 .lower_image{
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
     margin-top: 2em;
 }
 
@@ -357,14 +347,13 @@ a:active {
 
 .lower_text{
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 2;
     margin-top: 2em;
 }
 
 .image_title{
     text-align: center;
     width: fit-content;
-    align-self: center;
     justify-self: center;
     font-family: orb;
     background-color: rgba(13, 11, 97, 1);
@@ -375,15 +364,15 @@ a:active {
 }
 
 .information_block img{ 
+    display: block;
+    justify-self: center;
     width: 90%;
     min-width: 200px;
-    justify-self: center;
     background-color: rgba(13, 11, 97, 1);
     outline: #E4D329 solid 1px;
     border: 1px outset buttonborder;
     padding: 0.5em;
 }
-
 
 .information_block ul{
     grid-column: 2;
@@ -396,75 +385,50 @@ a:active {
     margin: 0;
 }
 
+.information_block h3{
+    margin: 0.2em;
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+}
+
 .information_block table{
     grid-column: 2;
-    grid-row: 1;
-    align-self: top;
-    
+    grid-row: 1/3;
+    align-self: top;   
 }
 
-@media screen and (max-width: 800px) 
-{
-    .definition p{
-        display: block;
-        width: 80%;
-        justify-self: center;
-    }
-    .right_p{
-        float: none;
-    }
-    .information_block table{
-        grid-column: 1/3;
-        grid-row: 1;
-        align-self: auto;
-    }
-    .top_image{
-        align-self: auto;
-        grid-column: 1;
-        grid-row: 2;
-    }
-    .bottom_image{
-        grid-column: 2;
-        grid-row: 2;
-        align-self: auto;
-    }
-    .information_block{
-        width: 70%;
-    }
-    .information_block ul{ 
-        grid-column: 1;  
-        margin-top: 2em;
-    }
-    .information_block img{
-        width: 85%;
-        display: block;
-        justify-self: center;
-    }
-    .definition{
-        width: 50%;
-        justify-self: center;
-        margin-top: 20%;
-    }
-    .page_title{
-        font-size: 4vw;
-        justify-content: center;
-        justify-self: center;
-        text-align: center;
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-    .page_grid{
-        width: 60%;
-        margin-top: 60%;
-    }
-    .lower_text{
-    grid-column: 1;
-    grid-row: 4;
-    margin-top: 2em;
-}
+/****************************************** TABLE ***************************************/
+
+.supernova_table{
+    width: 90%;
+    justify-self: center;   
 }
 
+.supernova_table tbody, th, td {
+    background-color: rgba(13, 11, 97, 1);
+    outline: #E4D329 solid 1px;
+    border: 1px outset buttonborder;
+    padding: .5em;
+    color: #ffffff;
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+    border-collapse: collapse;
+    justify-content: center;
+}
 
+.supernova_table iframe{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.supernova_table h3, thead{
+    text-align: center;
+}
+
+.supernova_table td{
+    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+    width: 50%;
+}
+
+/****************************************** FORM SECTION *************************************/
 .fav_object_form{
     color: white;
     justify-self: center;
@@ -482,6 +446,7 @@ a:active {
     background-color: rgb(13, 11, 97);
 }
 
+/****************************************** VIDEO SECTION *************************************/
 .video_section{
     display: flex;
     flex-direction: column;
@@ -507,35 +472,7 @@ a:active {
     aspect-ratio: 16 / 9;
 }
 
-.supernova_table{
-    width: 90%;
-    justify-self: center;
-    
-}
 
-.supernova_table tbody, th, td {
-    background-color: rgba(13, 11, 97, 1);
-    outline: #E4D329 solid 1px;
-    border: 1px outset buttonborder;
-    padding: .5em;
-    color: #ffffff;
-    font-size: clamp(.7rem, 1.5vw, 1.5rem);
-    border-collapse: collapse;
-    justify-content: center;
-}
-
-.supernova_table iframe{
-    width: 100%;
-    aspect-ratio: 16 / 9;
-}
-
-.supernova_table h3, thead{
-    text-align: center;
-}
-
-.supernova_table td{
-    font-size: clamp(0.8rem, 1.2vw, 1.2rem);
-}
 
 .attributions{
     justify-self: center;
@@ -545,5 +482,98 @@ a:active {
 .attributions h4, h5, h6{
     margin: 0;
 }
+
+/********************************************** SCREEN SIZES *******************************************/
+@media screen and (max-width: 800px) 
+{
+    .definition p{
+        display: inline-block;
+        width: 35%;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .information_block table{
+        grid-column: 1;
+        grid-row: 2;
+        align-self: auto;
+        margin-top: 2em;
+    }
+    .upper_image{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .lower_text{
+        grid-column: 1;
+        grid-row: 4;
+        margin-top: 2em;
+    }
+    .lower_image{
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 2em;
+    }
+    .information_block{
+        width: 70%;
+    }
+    .information_block ul{ 
+        grid-column: 1;  
+        margin-top: 2em;
+    }
+    .information_block img{
+        width: 85%;
+        display: block;
+        justify-self: center;
+    }
+    .definition{
+        width: 90%;
+        justify-self: center;
+        margin-top: 50%;
+    }
+    .page_title{
+        font-size: 4vw;
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .page_grid{
+        width: 60%;
+        margin-top: 60%;
+    }
+    .lower_text{
+    grid-column: 1;
+    grid-row: 4;
+    margin-top: 2em;
+    }
+    .attributions{
+        margin-top: 5em;
+    }
+}
+
+@media screen and (max-width: 450px) 
+{
+    .information_block{
+        width: 90%;
+    }
+    .definition{
+        width: 90%;
+    }
+    .page_grid{
+        width: 60%;
+        margin-top: 60%;
+    }
+    .right_p{
+        float: none;
+    }
+    .definition p{
+        display: block;
+        width: 80%;
+    }
+}
+
+
+
 
 
