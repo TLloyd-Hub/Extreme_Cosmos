@@ -12,26 +12,47 @@
 <body class="no_margin">
 
     <div class="parallax nebula">
-        <nav class="primary_nav">
-            <div class="nav_wrapper">
+
+
+
+        <!-------NAVIGATION BAR------->
+
+        <nav class="navbar">
+            <div class="home_logo">
                 <a href="../index.html"><img src="../img/mini_logo.png" alt="A picture of the website logo."></a>
-                <ul class="nav_list">
-                    <li>About Me</li>
-                    <li class="dropdown">Space Objects
-                        <div class="dropdown-content">
-                            <a href="supernova.html">Supernova</a>
-                            <a href="quasar.html">Quasar</a>
-                            <a href="black_hole.html">Black Hole</a>
-                            <a href="nebula.html">Nebula</a>
-                            <a href="neutron.html">Neutron Star</a>
-                        </div>
-                    </li>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+            <label for="menu-toggle" class="hamburger">
+                <span class="burger_top"></span>
+                <span class="burger_mid"></span>
+                <span class="burger_bottom"></span>
+            </label>
+
+            <div class="nav_menu">
+                <ul class="menu-items">
+                    <li><a href="supernova.html">Supernova</a></li>
+                    <li><a href="quasar.html">Quasar</a></li>
+                    <li><a href="black_hole.html">Black Hole</a></li>
+                    <li><a href="nebula.html">Nebula</a></li>
+                    <li><a href="neutron.html">Neutron Star</a></li>
+                    <li><a href="about.html">About Me</a></li>
                 </ul>
             </div>
         </nav>
+
+
+
+        <!-------TITLE------->
+
         <div class="page_title">
             <h1 class="blue_text font_exo shadow_text">Nebula</h1>
         </div>
+        
+        
+        
+        <!-------DEFINITION------->
+
         <article class="definition">
             <p>A nebula is a giant cloud of dust and gas in space. Some nebulae are formed from the gas and dust thrown
                 out by an exploding star when it goes <a href="supernova.html">supernova.</a> They can create beautiful
@@ -42,14 +63,23 @@
                 a new star.</p>
         </article>
 
-        <div class="main_content">
+
+
+
+        <!-------MAIN CONTENT SECTION------->
+
+        <section class="main_content">
             <div class="content_wrapper">
                 <article class="information_block">
+
+
                     <div class="upper_image">
                         <h2 class="image_title">Nebula<br><a
                                 href="https://en.wikipedia.org/wiki/Pillars_of_Creation">Pillars of Creation</a></h2>
                         <img src="../img/objects/pillars.webp" alt="A picture of the pillars of creation nebula.">
                     </div>
+
+
 
                     <ul>Key Types of Nebulae:
                         <li><br>Emission Nebulae: Clouds of high-energy gas that are energized by ultraviolet radiation
@@ -63,14 +93,24 @@
                         <li><br>Supernova Remnants: The shattered, expanding debris left behind after a massive star
                             explodes at the end of its life (e.g. the Crab Nebula).</li>
                     </ul>
+
+
                     <div class="lower_image">
                         <h2 class="image_title">Nebula<br><a
                                 href="https://en.wikipedia.org/wiki/Cat%27s_Eye_Nebula">Cat's Eye Nebula</a></h2>
                         <img src="../img/objects/cat_eye.webp" alt="A picture of the pillars of creation nebula.">
                     </div>
+
+                    
                 </article>
             </div>
-        </div>
+        </section>
+
+
+
+
+        <!------ATTRIBUTIONS------->
+
         <footer>
             <div class="attributions">
                 <h4>Attributions</h4>
@@ -87,9 +127,6 @@
             </div>
         </footer>
     </div>
-
-
-
 
 </body>
 
