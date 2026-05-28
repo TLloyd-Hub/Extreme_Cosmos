@@ -81,27 +81,31 @@
 }
 
 .parallax.home{
-    background-image: url(../img/background_small.jpg);
+    background-image: url(../img/title_images/title_page.webp);
 }
 
 .parallax.nova{
-    background-image: url(../img/title_images/supernova.jpg);
+    background-image: url(../img/title_images/supernova.webp);
 }
 
 .parallax.quasar{
-    background-image: url(../img/title_images/quasar.jpg);
+    background-image: url(../img/title_images/quasar.webp);
 }
 
 .parallax.black{
-    background-image: url(../img/title_images/blackhole.jpg);
+    background-image: url(../img/title_images/blackhole.webp);
 }
 
 .parallax.nebula{
-    background-image: url(../img/title_images/nebula.jpg);
+    background-image: url(../img/title_images/nebula.webp);
 }
 
 .parallax.neutron{
-    background-image: url(../img/title_images/pulsar.jpg);
+    background-image: url(../img/title_images/pulsar.webp);
+}
+
+.parallax.about_me{
+    background-image: url(../img/title_images/nebula_2.webp);
 }
 
 /****************************************** CONTAINERS *********************************************/
@@ -177,15 +181,17 @@
 }
 
 .nav_menu li{
-    background-color: rgba(18, 16, 149, 0.5);
-    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    background-color: rgb(13, 11, 97);
+    outline: #E4D329 solid 1px;
+    border: 1px outset buttonborder;
+    font-size: clamp(1rem, 1.6vw, 1.8rem);
     font-weight: 800;
     width: fit-content;
     height: fit-content;
     text-align: center;
     border: 1px outset buttonborder;
     border-radius: 3px;
-    padding: 1px 6px;
+    padding: 4px 10px;
 }
 
 /* THE MAGIC: Toggle menu when checkbox is checked */
@@ -591,7 +597,7 @@ a:active {
 }
 
 /********************************************** SCREEN SIZES *******************************************/
-@media screen and (max-width: 800px) 
+@media screen and (max-width: 950px) 
 {
     .menu-toggle:checked ~ .nav_menu {
         top: 0;
