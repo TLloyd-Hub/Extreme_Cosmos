@@ -194,12 +194,10 @@
     padding: 4px 10px;
 }
 
-/* THE MAGIC: Toggle menu when checkbox is checked */
 .menu-toggle:checked ~ .nav_menu {
     top: 0;
 }
 
-/* Optional: Style the hamburger icon (the lines) */
 .hamburger {
     cursor: pointer;
     display: flex;
@@ -243,82 +241,7 @@
 .home_logo img{
     width: 100%;   
 }
-/****************************************** NAVBAR *********************************************/
-
-.primary_nav{
-    background-color: rgba(13, 11, 97, 0.5);
-}
-
-.nav_wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-self: left;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: fit-content;
-    font-family: orb;
-    grid-area: stack;
-    z-index: 10;
-    border-bottom: #E4D329 1px solid;
-    
-}
-
-.nav_list{
-    font-family: orb;
-    display: flex;
-    justify-items: left;
-    list-style: none;
-    gap: 10px;
-    padding: 0;
-    color: #4fc3f7;
-    width: 80%;
-}
-
-.nav_list li{
-    background-color: rgba(18, 16, 149, 0.5);
-    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
-    font-weight: 800;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    border: 1px outset buttonborder;
-    border-radius: 3px;
-    padding: 1px 6px;
-}
-
-.nav_wrapper img{
-    width: 100px;
-    height: auto;
-    justify-self: left;
-    margin-right: 6em;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(13, 11, 97, 0.8);
-  min-width: 130px;
-  width: fit-content;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 8px 10px;
-  border: 2px solid black;
-  font-size: clamp(0.8rem, 1.5vw, 2rem);
-  flex-direction: column;
-  text-align: left;
-  white-space: nowrap;
-  color: #4fc3f7;
-}
-
-.dropdown:hover .dropdown-content {
-    display: flex;
-    margin-top: 2px;
-    color: #4fc3f7;
-}
+/****************************************** LINKS *********************************************/
 
 a{
     text-decoration: none;
@@ -363,7 +286,7 @@ a:active {
     padding-bottom: 5%;
 }
 
-/********************************************* NAVIGATION GRID **************************************/
+/********************************************* HOME PAGE GRID **************************************/
 .page_grid{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -520,7 +443,6 @@ a:active {
     border: 1px outset buttonborder;
     padding: .5em;
     color: #ffffff;
-    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
     border-collapse: collapse;
     justify-content: center;
 }
@@ -534,9 +456,37 @@ a:active {
     text-align: center;
 }
 
+.supernova_table h4{
+    padding: 0;
+    margin-bottom: .5em;
+}
+
 .supernova_table td{
-    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
+    font-size: clamp(1.2rem, 1.2vw, 1.2rem);
     width: 50%;
+}
+
+.supernova_table th{
+    font-size: clamp(1.2rem, 1.2vw, 1.2rem);
+}
+
+.supernova_table.nebula{
+    text-align: center;
+}
+
+.supernova_table .image_title{
+    background-color: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.supernova_table img{
+    background-color: none;
+    outline: none;
+    border: none;
+    max-height: 250px;
 }
 
 /****************************************** FORM SECTION *************************************/
