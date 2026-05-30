@@ -269,6 +269,42 @@ a:active {
     padding-bottom: 5%;
 }
 
+.about_me_intro{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    font-size: clamp(1.2rem, 1.2vw, 1.2rem);
+    background-image: linear-gradient(135deg, rgba(13, 11, 97, 1), rgba(0, 0, 0, 0.7), rgba(13, 11, 97, 1));
+    color: #ffffff;
+    font-family: exo;
+    width: 60%;
+    outline: #E4D329 solid 1px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    padding: 10px 16px;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.about_content{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+}
+
+.about_image img{
+    justify-self: center;
+    width: 100%;
+    min-width: 200px;
+    background-color: rgba(13, 11, 97, 1);
+    outline: #E4D329 solid 1px;
+    border: 1px outset buttonborder;
+    padding: 0.5em;
+}
+
 /********************************************* HOME PAGE GRID **************************************/
 .page_grid {
     display: grid;
@@ -316,7 +352,8 @@ a:active {
 
 .definition p {
     display: inline-block;
-    background-color: rgba(13, 11, 97, 1);
+    background-image: linear-gradient(135deg, rgba(13, 11, 97, 1), rgba(0, 0, 0, 0.7), rgba(13, 11, 97, 1));
+    /*background-color: rgba(13, 11, 97, 1);*/
     outline: #E4D329 solid 1px;
     border: 1px outset buttonborder;
     border-radius: 3px;
