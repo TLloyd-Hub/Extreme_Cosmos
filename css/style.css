@@ -255,12 +255,12 @@ a:active {
     margin-top: 0;
     margin-bottom: 12%;
     padding: 0;
-    height: fit-content;
 }
 
 .page_title h1{
     color: #1e3a8a;
     font-family: exo;
+    margin: 0;
 }
 
 .main_content {
@@ -322,6 +322,11 @@ a:active {
     border-radius: 3px;
     padding: 10px 16px;
     width: 20%;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .right_p {
@@ -379,6 +384,11 @@ a:active {
     padding: 0.5em;
     font-size: medium;
     font-weight: 400;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .upper_text,
@@ -449,11 +459,21 @@ td {
 .supernova_table h3,
 thead {
     text-align: center;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .supernova_table h4 {
     padding: 0;
     margin-bottom: .5em;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .supernova_table td {
@@ -520,6 +540,11 @@ thead {
 
 .video_section p {
     font-size: clamp(1rem, 1.5vw, 2rem);
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 .video_section iframe {
@@ -530,6 +555,11 @@ thead {
     text-align: center;
     font-size: clamp(1rem, 1.5vw, 2rem);
     margin: .25em;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 /****************************************** GIF SECTION ****************************************/
