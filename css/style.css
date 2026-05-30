@@ -1,26 +1,30 @@
 @font-face {
     font-family: exo;
     src: url(../font/Exo2.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: orb;
     src: url(../font/Orbitron.ttf);
     font-weight: 400;
+    font-display: swap;
 }
-
+/*
 @font-face {
     font-family: orb;
     src: url(../font/Orbitron-Bold.ttf);
     font-weight: 700;
+    font-display: swap;
 }
 
 @font-face {
     font-family: orb;
     src: url(../font/Orbitron-ExtraBold.ttf);
     font-weight: 800;
+    font-display: swap;
 }
-
+*/
 .font_orb {
     font-family: orb;
 }
@@ -409,13 +413,14 @@ a:active {
     border-radius: 3px;
 }
 
-.upper_text h3,
-.lower_text h3 {
+.upper_text p,
+.lower_text p {
     padding: 5px;
     margin: 0;
     margin-top: .5em;
     margin-left: .25em;
     font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+    font-weight: 700;
 }
 
 .information_block img {
@@ -536,12 +541,18 @@ thead {
     padding: 10px 16px;
 }
 
-.video_section h3 {
+.video_section p {
     font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
 .video_section iframe {
     aspect-ratio: 16 / 9;
+}
+
+.video_title{
+    text-align: center;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    margin: .25em;
 }
 
 /****************************************** FOOTER SECTION *************************************/
