@@ -25,29 +25,6 @@
     font-display: swap;
 }
 */
-.font_orb {
-    font-family: orb;
-}
-
-.font_exo {
-    font-family: exo;
-}
-
-.width_100 {
-    max-width: 100%;
-}
-
-.white_text {
-    color: white;
-}
-
-.blue_text {
-    color: #1e3a8a;
-}
-
-.light_blue_text {
-    color: #4fc3f7;
-}
 
 .shadow_text {
     text-shadow: 2px 2px 2px #4fc3f7;
@@ -61,16 +38,8 @@
         1px 1px 0 #000;
 }
 
-.black_border {
-    border: 2px solid black;
-}
-
-.no_margin {
+body{
     margin: 0;
-}
-
-.right_text {
-    text-align: right;
 }
 
 /****************************************** PARALLAX *********************************************/
@@ -278,12 +247,20 @@ a:active {
 
 .page_title {
     display: flex;
-    justify-content: left;
-    justify-self: left;
+    justify-content: center;
+    justify-self: center;
     font-size: 2vw;
     width: fit-content;
-    margin-left: 2em;
+    /*margin-left: 2em;*/
+    margin-top: 0;
     margin-bottom: 12%;
+    padding: 0;
+    height: fit-content;
+}
+
+.page_title h1{
+    color: #1e3a8a;
+    font-family: exo;
 }
 
 .main_content {
@@ -554,6 +531,23 @@ thead {
     font-size: clamp(1rem, 1.5vw, 2rem);
     margin: .25em;
 }
+
+/****************************************** GIF SECTION ****************************************/
+
+.gif_section{
+    justify-self: center;
+    margin-top: 5em;
+    color: #ffffff;
+}
+
+.gif_section img{
+    background-color: rgba(13, 11, 97, 1);
+    outline: #E4D329 solid 1px;
+    border: 1px outset buttonborder;
+    padding: 10px 10px;
+}
+
+
 
 /****************************************** FOOTER SECTION *************************************/
 
