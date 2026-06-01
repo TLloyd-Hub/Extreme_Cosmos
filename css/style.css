@@ -270,6 +270,8 @@ a:active {
 }
 
 .about_me_intro{
+    grid-column: 2;
+    grid-row: 1;
     display: flex;
     justify-self: center;
     justify-content: center;
@@ -277,7 +279,7 @@ a:active {
     background-image: linear-gradient(135deg, rgba(13, 11, 97, 1), rgba(0, 0, 0, 0.7), rgba(13, 11, 97, 1));
     color: #ffffff;
     font-family: exo;
-    width: 60%;
+    width: 90%;
     outline: #E4D329 solid 1px;
     border: 1px outset buttonborder;
     border-radius: 3px;
@@ -297,17 +299,20 @@ a:active {
     align-items: center;
     width: 80%;
     flex-direction: column;
-
 }
 
 .about_image{
     display: flex;
     justify-self: center;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 85%;
+    color: #ffffff;
 }
 
-.about_image img{
+
+.about_image img, .about_me_picture img{
     align-self: center;
     width: 90%;
     min-width: 200px;
@@ -315,6 +320,22 @@ a:active {
     outline: #E4D329 solid 1px;
     border: 1px outset buttonborder;
     padding: 0.5em;
+}
+
+.about_me_section{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+}
+
+.about_me_picture{
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
 }
 
 /********************************************* HOME PAGE GRID **************************************/
@@ -839,7 +860,18 @@ footer{
         grid-row: 4;
         margin-top: 2em;
     }
+
+    .about_me_section{
+        grid-template-columns: 100%;
+    }
+
     .about_me_intro{
+        grid-column: 1;
+        margin-top: 5em;
+    }
+
+    .about_me_picture{
+        grid-row: 2;
         margin-top: 5em;
     }
 
