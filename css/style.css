@@ -77,6 +77,10 @@ body{
     background-image: url(../img/title_images/pulsar.webp);
 }
 
+.parallax.dark {
+    background-image: url(../img/title_images/dark_matter.webp);
+}
+
 .parallax.about_me {
     background-image: url(../img/title_images/nebula_2.webp);
 }
@@ -151,15 +155,16 @@ body{
     gap: 10px;
     padding: 0;
     color: #4fc3f7;
-    width: 100%;
+    width: 80%;
 }
 
 .nav_menu li {
     background-color: rgb(13, 11, 97);
     outline: #E4D329 solid 1px;
     border: 1px outset buttonborder;
-    font-size: clamp(.8rem, 1.6vw, 1.8rem);
+    font-size: clamp(.8rem, 1.3vw, 1.8rem);
     font-weight: 800;
+    white-space: nowrap;
     width: fit-content;
     height: fit-content;
     text-align: center;
@@ -341,6 +346,9 @@ a:active {
     justify-self: center;
     align-self: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
 }
 
 /********************************************* HOME PAGE GRID **************************************/
@@ -497,7 +505,7 @@ a:active {
     border: 1px outset buttonborder;
     border-radius: 3px;
     height: fit-content;
-    align-self: center;
+    align-self: last baseline;
 }
 
 .upper_text p,
@@ -761,7 +769,6 @@ footer{
     }
 
     .nav_menu {
-
         align-items: center;
         width: fit-content;
         height: fit-content;
@@ -777,11 +784,16 @@ footer{
         transition: right 0.3s ease;
         margin-top: 5em;
         padding-left: 1em;
+        padding-right: 1em;        
     }
 
     .menu-items {
         flex-direction: column;
         width: fit-content;
+    }
+
+    .nav_menu li{
+        font-size: 1rem;
     }
 
     .definition p {
