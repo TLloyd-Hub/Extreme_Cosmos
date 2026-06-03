@@ -81,6 +81,10 @@ body{
     background-image: url(../img/title_images/dark_matter.webp);
 }
 
+.parallax.oddities {
+    background-image: url(../img/title_images/oddities.webp);
+}
+
 .parallax.about_me {
     background-image: url(../img/title_images/nebula_2.webp);
 }
@@ -146,10 +150,24 @@ body{
     top: -250px;
     transition: top 0.3s ease;
 }
-
+/*
 .menu-items {
     font-family: orb;
     display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+    color: #4fc3f7;
+    width: 80%;
+}
+*/
+
+.menu-items {
+    font-family: orb;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
     justify-content: center;
     list-style: none;
     gap: 10px;
@@ -165,7 +183,7 @@ body{
     font-size: clamp(.8rem, 1.3vw, 1.8rem);
     font-weight: 800;
     white-space: nowrap;
-    width: fit-content;
+    width: 150px;
     height: fit-content;
     text-align: center;
     border: 1px outset buttonborder;
@@ -418,7 +436,8 @@ a:active {
 
 /*********************************** INFORMATION AREA *******************************/
 
-.information_block {
+.information_block,
+.oddities_block {
     display: grid;
     grid-template-columns: 45% 55%;
     margin-top: 10em;
@@ -429,6 +448,9 @@ a:active {
     font-size: clamp(0.9rem, 1.5vw, 1.5rem);
 }
 
+.oddities_block {
+    grid-template-columns: 20% 80%;
+}
 
 .upper_image {
     grid-column: 1;
@@ -509,7 +531,8 @@ a:active {
 }
 
 .upper_text p,
-.lower_text p {
+.lower_text p,
+.oddities_text p {
     padding: 5px;
     margin: 0;
     margin-top: .5em;
@@ -518,7 +541,8 @@ a:active {
     font-weight: 700;
 }
 
-.information_block img {
+.information_block img,
+.oddities_block img {
     display: block;
     justify-self: center;
     width: 90%;
@@ -527,6 +551,24 @@ a:active {
     outline: #E4D329 solid 1px;
     border: 1px outset buttonborder;
     padding: 0.5em;
+}
+
+.oddities_block img {
+    width: 90%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-self: center;
+}
+
+.oddities_text{
+    background-image: linear-gradient(135deg, rgba(13, 11, 97, 1), rgba(0, 0, 0, 0.85), rgba(13, 11, 97, 1));
+    outline: #E4D329 solid 1px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    height: fit-content;
+    align-self: center;
+    justify-self: center;
+    width: 80%;
 }
 
 .image_grid{
@@ -551,7 +593,7 @@ a:active {
     background-color: transparent;
 }
 
-.information_block ul {
+.information_block ul, .oddities_block ul {
     list-style: none;
     margin: 0;
     padding: 10px 16px;
@@ -762,6 +804,14 @@ footer{
 }
 
 /********************************************** SCREEN SIZES *******************************************/
+
+@media screen and (min-width: 1350px) {
+    .nav_menu li{
+        width: 200px;
+    }
+}
+
+
 @media screen and (max-width: 950px) {
     .menu-toggle:checked~.nav_menu {
         top: 0;
@@ -788,12 +838,15 @@ footer{
     }
 
     .menu-items {
+        display: flex;
+        justify-content: center;
         flex-direction: column;
         width: fit-content;
     }
 
     .nav_menu li{
         font-size: 1rem;
+        width: fit-content;
     }
 
     .definition p {
@@ -838,20 +891,24 @@ footer{
         margin-top: 2em;
     }
 
-    .information_block {
+    .information_block, .oddities_block {
         width: 70%;
         grid-template-columns: 100%;
     }
 
-    .information_block ul {
+    .information_block ul, .oddities_block ul {
         grid-column: 1;
         margin-top: 2em;
     }
 
-    .information_block img {
+    .information_block img, .oddities_block img {
         width: 85%;
         display: block;
         justify-self: center;
+    }
+
+    .oddities_block img{
+        width: 60%;
     }
 
     .definition {
@@ -892,6 +949,11 @@ footer{
     .about_me_picture{
         grid-row: 2;
         margin-top: 5em;
+    }
+
+    .oddities_text{
+        margin-top: .25em;
+        margin-bottom: 5em;
     }
 
 }
