@@ -82,7 +82,7 @@ body{
 }
 
 .parallax.oddities {
-    background-image: url(../img/title_images/oddities.webp);
+    background-image: url(../img/title_images/oddity.webp); 
 }
 
 .parallax.about_me {
@@ -372,7 +372,7 @@ a:active {
 /********************************************* HOME PAGE GRID **************************************/
 .page_grid {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 25% 25% 25% 25%;
     width: 30%;
     justify-self: center;
     justify-content: center;
