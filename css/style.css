@@ -499,7 +499,7 @@ a:active {
     border: 1px outset #3b3b3b;
     border-radius: 3px;
     height: fit-content;
-    align-self: baseline;
+    align-self: flex-end;
 }
 
 .upper_text p,
